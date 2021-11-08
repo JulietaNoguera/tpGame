@@ -1,6 +1,6 @@
 import wollok.game.*
 import fondo.*
-import personajes.*
+import personaje.*
 
 object nivelLlaves {
 
@@ -11,7 +11,7 @@ object nivelLlaves {
 		// otros visuals, p.ej. bloques o llaves
 			
 		// personaje, es importante que sea el último visual que se agregue
-		game.addVisual(personajeSimple)
+		//game.addVisual(personajeSimple)
 		
 		// teclado
 		// este es para probar, no es necesario dejarlo

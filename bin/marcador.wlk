@@ -1,4 +1,4 @@
-import personajes.*
+import personaje.*
 import wollok.game.*
 
 //object fondoMarcador{

@@ -1,6 +1,6 @@
 import wollok.game.*
 import fondo.*
-import personajes.*
+import personaje.*
 import elementos.*
 import nivel2.*
 import marcador.*
@@ -111,4 +111,3 @@ object nivelBloques {
 	}
 		
 }
-

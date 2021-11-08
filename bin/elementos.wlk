@@ -41,5 +41,3 @@ class Estrella inherits Elementos {
 	
 }
 
-
-
