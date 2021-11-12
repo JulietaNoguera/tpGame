@@ -3,9 +3,9 @@ import direcciones.*
 import nivel1.*
 
 object bubba {
-	var property position = game.origin()
+	var property position = game.center()
 	var property image = "astrom.png"	
-	var property energia = 30
+	var property energia = 100
 	var property salud =  10
 	var property dinero = 0
 	var property municiones = 0
@@ -22,7 +22,7 @@ object bubba {
 		const todosLosConsumibles = [consumiblesArriba,consumiblesderecha,consumiblesAbajo,consumiblesizquierda].flatten()
 		todosLosConsumibles.forEach{ consumible =>
 			consumible.serConsumido(self)
-			game.say(self,"Up!")
+			game.say(self,"Ñam!")
 		}
 	}
 	
@@ -49,7 +49,7 @@ object bubba {
 	
 	method morir(){
 		//Falta implementar imagen al morir y implementar el metodo perder en nivel1
-		image = "perdio.png"
+			image = "perdio.png"		
 		game.schedule(3000,{
 			nivelBloques.perder()
 				
@@ -59,10 +59,11 @@ object bubba {
 	}
 	//MOVIMIENTOS:
 	method avanzar(){
-		if(energia > 0){
+		if(energia >=1 ){
 			position = direccion.moverSiguiente(position,self)
 			energia-=1
-		}else{
+		}
+		else{
 			self.morir()
 		}
 		

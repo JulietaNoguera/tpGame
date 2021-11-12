@@ -4,7 +4,7 @@ import inicio.*
 
 program juego_aventura {
 
-	game.title("Amongi Hur")
+	game.title("Aventura de bubba")
 	game.height(16)
 	game.width(15)
 	game.boardGround("fondoBlanco.png")

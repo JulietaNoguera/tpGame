@@ -9,3 +9,8 @@ class Deposito{
 	
 	
 }
+
+class Dep{
+	const property position 
+	const property image
+}

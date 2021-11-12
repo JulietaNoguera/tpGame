@@ -21,12 +21,12 @@ object niveles {
 		}
 	method irAJuego() {
 		
-		game.schedule(2500, {
+		game.schedule(2000, {
 			game.clear()
 			// cambio de fondo
-			game.addVisual(new Fondo(image="fondo.png"))
+			game.addVisual(new Fondo(image="INSTRUCCIONES.png"))
 			// después de un ratito ...
-			game.schedule(3000, {
+			game.schedule(5000, {
 				// ... limpio todo de nuevo
 				game.clear()
 				// y arranco el siguiente nivel
