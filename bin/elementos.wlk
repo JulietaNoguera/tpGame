@@ -12,7 +12,8 @@ class Elementos{
 	
 }
 class Estrella inherits Elementos {
-	const property llegadas=0
+	const property llegadas =0
+	
 	override method puedePisarse() = false
 	override method puedeConsumirse() = false
 	override method puedeRecibirDanio() = false
@@ -21,9 +22,12 @@ class Estrella inherits Elementos {
 		self.validarLugar(direccion)
 		position = direccion.moverSiguiente(self.position(),self)
 	}
+	
 	method validarLugar(direccion){
 		const posAlLado = direccion.moverSiguiente(self.position(),self)
-		const hayLugar = game.getObjectsIn(posAlLado).all{ obj => obj.puedePisarse()}
+		const hayLugar = game.getObjectsIn(posAlLado).all{ obj => obj.puedePisarse()
+
+		}
 		
 		if(!hayLugar){
 			throw new Exception(message = "No puedo moverme!")
@@ -34,10 +38,8 @@ class Estrella inherits Elementos {
 		player.energia(player.energia()+1)
 	}
 
-	
-	method estaEnDeposito(){
-		return llegadas.map{ llegada => llegada.position()}.contains(self.position())
-	}
-	
+	method estaBienPosicionada() {
+		return llegadas.map{ l=> l.position()}.contains(self.position()) //TODO: Redefinir el (==) en Position!
+	}	
 }
 

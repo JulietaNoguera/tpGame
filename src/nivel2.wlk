@@ -6,7 +6,7 @@ object nivelLlaves {
 
 	method configurate() {
 		// fondo - es importante que sea el primer visual que se agregue
-		game.addVisual(new Fondo(image="fondoCompleto.png"))
+		game.addVisual(new Fondo(image="fondo.png"))
 				 
 		// otros visuals, p.ej. bloques o llaves
 			
@@ -19,6 +19,14 @@ object nivelLlaves {
 
 		// colisiones, acá sí hacen falta
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	method ganar() {
 		// es muy parecido al terminar() de nivelBloques

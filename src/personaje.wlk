@@ -55,6 +55,7 @@ object bubba {
 				
 			}
 		)
+		
 	}
 	//MOVIMIENTOS:
 	method avanzar(){
